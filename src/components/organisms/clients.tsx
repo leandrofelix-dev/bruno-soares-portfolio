@@ -1,4 +1,4 @@
-function Clients () {
+function Clients() {
   return (
     <div>
       <h1>Clients</h1>

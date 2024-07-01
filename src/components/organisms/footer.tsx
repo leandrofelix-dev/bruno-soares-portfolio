@@ -3,7 +3,7 @@ function Footer() {
     <footer>
       <h1>Footer</h1>
     </footer>
-  );
+  )
 }
 
 export { Footer }
