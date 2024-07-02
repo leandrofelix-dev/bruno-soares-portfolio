@@ -14,8 +14,8 @@ function NavBar({ focus }: INavBarProps) {
   }
 
   return (
-    <div className="bg-black/50 px-40 fixed w-screen">
-      <nav className="flex justify-between items-center h-20">
+    <div className="fixed z-50 w-screen bg-black/50 px-40">
+      <nav className="flex h-20 items-center justify-between">
         <div className="h-8">
           <img src="/logo-header.svg" alt="logo do designer bruno soares" className="h-full" />
         </div>
@@ -26,9 +26,9 @@ function NavBar({ focus }: INavBarProps) {
             return (
               <li key={numKey}>
                 <a
-                  href={`#${numKey}`}
+                  href={`#${navItems[numKey].replace(' ', '-').toLowerCase()}`}
                   className={twMerge(
-                    `text-white ${isActive ? '' : 'hover:text-blue-700 text-blue-500 hover:text-blue-500/80'}`,
+                    `text-white ${isActive ? '' : 'text-blue-500 hover:text-blue-500/80 hover:text-blue-700'}`,
                   )}
                 >
                   {navItems[numKey]}
