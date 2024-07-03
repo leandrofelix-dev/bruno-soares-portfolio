@@ -1,16 +1,130 @@
+import React from 'react'
+import { useSpring, animated } from 'react-spring'
 import { FaRegPaperPlane } from 'react-icons/fa'
 
 function Hero() {
+  const floatPropsPhotoshop = useSpring({
+    from: { translateY: 0 },
+    to: async (next) => {
+      while (true) {
+        await next({ translateY: 10 })
+        await next({ translateY: 0 })
+      }
+    },
+    config: { tension: 100, friction: 20, duration: 3000, delay: 1000 },
+    loop: true,
+  })
+
+  const floatPropsIllustrator = useSpring({
+    from: { translateY: 0 },
+    to: async (next) => {
+      while (true) {
+        await next({ translateY: -10 })
+        await next({ translateY: 0 })
+      }
+    },
+    config: { tension: 100, friction: 20, duration: 3500, delay: 500 },
+    loop: true,
+  })
+
+  const floatPropsFigma = useSpring({
+    from: { translateY: 0 },
+    to: async (next) => {
+      while (true) {
+        await next({ translateY: 8 })
+        await next({ translateY: 0 })
+      }
+    },
+    config: { tension: 100, friction: 20, duration: 3200, delay: 1200 },
+    loop: true,
+  })
+
+  const floatPropsCoreldraw = useSpring({
+    from: { translateY: 0 },
+    to: async (next) => {
+      while (true) {
+        await next({ translateY: -8 })
+        await next({ translateY: 0 })
+      }
+    },
+    config: { tension: 100, friction: 20, duration: 3800, delay: 800 },
+    loop: true,
+  })
+
   return (
-    <div className="flex justify-center">
-      <div className="h-[740px] w-[700px]">
-        <img src="/_bruno-photo.png" alt="Bruno Foto" className="z-20" />
-        <img src="/photoshop.png" alt="Logo Photoshop" className="absolute left-[200px] top-[240px] -z-10 w-48" />
-        <img src="/illustrator.png" alt="Logo Illustrator" className="absolute left-[450px] top-[300px] z-10 w-48" />
-        <img src="/figma.png" alt="Logo Figma" className="absolute left-[230px] top-[360px] z-10 w-48" />
-        <img src="/coreldraw.png" alt="Logo Coreldraw" className="absolute left-[450px] top-[420px] z-10 w-48" />
+    <div className="flex items-center justify-center">
+      <div className="relative flex items-center">
+        <img
+          src="/_bruno-photo.png"
+          alt="Bruno Foto"
+          className="z-10 mt-20 h-auto max-w-full"
+          style={{ maxWidth: '650px' }}
+        />
+        <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
+          <animated.img
+            src="/photoshop.png"
+            alt="Logo Photoshop"
+            className="h-auto w-48"
+            style={{
+              position: 'absolute',
+              left: '50%',
+              top: '50%',
+              transform: 'translate(-50%, -50%)',
+              zIndex: 5, // Z-index menor para ficar atrás da foto do Bruno
+              marginLeft: '-250px',
+              marginTop: '-90px',
+              transform: floatPropsPhotoshop.translateY.interpolate((y) => `translateY(${y}px)`),
+            }}
+          />
+          <animated.img
+            src="/illustrator.png"
+            alt="Logo Illustrator"
+            className="h-auto w-48"
+            style={{
+              position: 'absolute',
+              left: '50%',
+              top: '50%',
+              transform: 'translate(-50%, -50%)',
+              zIndex: 10, // Z-index maior para ficar sobre a foto do Bruno
+              marginLeft: '0px',
+              marginTop: '-20px',
+              transform: floatPropsIllustrator.translateY.interpolate((y) => `translateY(${y}px)`),
+            }}
+          />
+          <animated.img
+            src="/figma.png"
+            alt="Logo Figma"
+            className="h-auto w-48"
+            style={{
+              position: 'absolute',
+              left: '50%',
+              top: '50%',
+              transform: 'translate(-50%, -50%)',
+              zIndex: 10, // Z-index maior para ficar sobre a foto do Bruno
+              marginLeft: '-200px',
+              marginTop: '30px',
+              transform: floatPropsFigma.translateY.interpolate((y) => `translateY(${y}px)`),
+            }}
+          />
+          <animated.img
+            src="/coreldraw.png"
+            alt="Logo Coreldraw"
+            className="h-auto w-48"
+            style={{
+              position: 'absolute',
+              left: '50%',
+              top: '50%',
+              transform: 'translate(-50%, -50%)',
+              zIndex: 10, // Z-index maior para ficar sobre a foto do Bruno
+              marginLeft: '0px',
+              marginTop: '100px',
+              transform: floatPropsCoreldraw.translateY.interpolate((y) => `translateY(${y}px)`),
+            }}
+          />
+        </div>
       </div>
-      <div className="flex flex-col gap-8">
+
+      <div className="ml-8 flex flex-col gap-8">
         <div className="flex flex-col gap-3">
           <div className="max-w-[170px] rounded-sm bg-gradient-primary p-0.5 text-center">
             <h1 className="text-[14px]">Olá, me chamo Bruno</h1>
