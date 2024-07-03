@@ -2,9 +2,13 @@ import { FaRegPaperPlane } from 'react-icons/fa'
 
 function Hero() {
   return (
-    <div className="mt-60 flex justify-center">
-      <div className="-mt-40 max-w-[700px]">
-        <img src="/_bruno-photo.png" alt="Bruno's Photo" className="h-full w-full" />
+    <div className="flex justify-center">
+      <div className="h-[740px] w-[700px]">
+        <img src="/_bruno-photo.png" alt="Bruno Foto" className="z-20" />
+        <img src="/photoshop.png" alt="Logo Photoshop" className="absolute left-[200px] top-[240px] -z-10 w-48" />
+        <img src="/illustrator.png" alt="Logo Illustrator" className="absolute left-[450px] top-[300px] z-10 w-48" />
+        <img src="/figma.png" alt="Logo Figma" className="absolute left-[230px] top-[360px] z-10 w-48" />
+        <img src="/coreldraw.png" alt="Logo Coreldraw" className="absolute left-[450px] top-[420px] z-10 w-48" />
       </div>
       <div className="flex flex-col gap-8">
         <div className="flex flex-col gap-3">
