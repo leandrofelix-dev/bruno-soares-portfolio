@@ -1,8 +1,8 @@
-import React from 'react'
 import { useSpring, animated } from 'react-spring'
 import { FaRegPaperPlane } from 'react-icons/fa'
 
 function Hero() {
+  //@ts-ignore
   const floatPropsPhotoshop = useSpring({
     from: { translateY: 0 },
     to: async (next) => {
@@ -15,6 +15,7 @@ function Hero() {
     loop: true,
   })
 
+  //@ts-ignore
   const floatPropsIllustrator = useSpring({
     from: { translateY: 0 },
     to: async (next) => {
@@ -27,6 +28,7 @@ function Hero() {
     loop: true,
   })
 
+  //@ts-ignore
   const floatPropsFigma = useSpring({
     from: { translateY: 0 },
     to: async (next) => {
@@ -39,6 +41,7 @@ function Hero() {
     loop: true,
   })
 
+  //@ts-ignore
   const floatPropsCoreldraw = useSpring({
     from: { translateY: 0 },
     to: async (next) => {
@@ -73,6 +76,7 @@ function Hero() {
               zIndex: 5, // Z-index menor para ficar atrás da foto do Bruno
               marginLeft: '-250px',
               marginTop: '-90px',
+              //@ts-ignore
               transform: floatPropsPhotoshop.translateY.interpolate((y) => `translateY(${y}px)`),
             }}
           />
@@ -85,9 +89,10 @@ function Hero() {
               left: '50%',
               top: '50%',
               transform: 'translate(-50%, -50%)',
-              zIndex: 10, // Z-index maior para ficar sobre a foto do Bruno
+              zIndex: 10,
               marginLeft: '0px',
               marginTop: '-20px',
+              //@ts-ignore
               transform: floatPropsIllustrator.translateY.interpolate((y) => `translateY(${y}px)`),
             }}
           />
@@ -100,9 +105,10 @@ function Hero() {
               left: '50%',
               top: '50%',
               transform: 'translate(-50%, -50%)',
-              zIndex: 10, // Z-index maior para ficar sobre a foto do Bruno
+              zIndex: 10,
               marginLeft: '-200px',
               marginTop: '30px',
+              //@ts-ignore
               transform: floatPropsFigma.translateY.interpolate((y) => `translateY(${y}px)`),
             }}
           />
@@ -115,9 +121,10 @@ function Hero() {
               left: '50%',
               top: '50%',
               transform: 'translate(-50%, -50%)',
-              zIndex: 10, // Z-index maior para ficar sobre a foto do Bruno
+              zIndex: 10,
               marginLeft: '0px',
               marginTop: '100px',
+              //@ts-ignore
               transform: floatPropsCoreldraw.translateY.interpolate((y) => `translateY(${y}px)`),
             }}
           />
