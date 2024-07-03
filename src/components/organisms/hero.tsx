@@ -55,8 +55,8 @@ function Hero() {
   })
 
   return (
-    <div className="flex items-center justify-center">
-      <div className="relative flex items-center">
+    <div className="flex flex-col items-center justify-center md:flex-row">
+      <div className="relative flex flex-col">
         <img
           src="/_bruno-photo.png"
           alt="Bruno Foto"
