@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { FiX } from 'react-icons/fi'
-import { TbMenu, TbMenuDeep } from 'react-icons/tb'
+import { TbMenu } from 'react-icons/tb'
 import { twMerge } from 'tailwind-merge'
 
 interface INavBarProps {
