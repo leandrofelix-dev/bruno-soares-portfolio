@@ -56,7 +56,7 @@ function Hero() {
 
   return (
     <div className="flex flex-col items-center justify-center md:flex-row">
-      <div className="relative flex flex-col">
+      <div className="relative hidden flex-col md:flex">
         <img
           src="/_bruno-photo.png"
           alt="Bruno Foto"
@@ -131,7 +131,7 @@ function Hero() {
         </div>
       </div>
 
-      <div className="ml-8 flex flex-col gap-8">
+      <div className="ml-8 mt-40 flex flex-col gap-8 md:mt-0">
         <div className="flex flex-col gap-3">
           <div className="max-w-[170px] rounded-sm bg-gradient-primary p-0.5 text-center">
             <h1 className="text-[14px]">Olá, me chamo Bruno</h1>
