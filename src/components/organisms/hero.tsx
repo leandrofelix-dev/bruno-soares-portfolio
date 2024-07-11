@@ -97,7 +97,7 @@ function Hero() {
             }}
           />
           <animated.img
-            src="/figma.png"
+            src="/aftereffects.png"
             alt="Logo Figma"
             className="h-auto w-48"
             style={{
