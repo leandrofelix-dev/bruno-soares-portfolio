@@ -14,7 +14,7 @@ function Services() {
           </h4>
         </div>
         <div className="mt-10 flex justify-center">
-          <div className="flex w-3/4 max-w-[1200px] flex-col justify-between gap-4 md:flex-row">
+          <div className="flex w-3/4 max-w-[1200px] flex-col justify-center gap-12 md:flex-row">
             <ServicesCard
               title={'Mídias Sociais'}
               description={
