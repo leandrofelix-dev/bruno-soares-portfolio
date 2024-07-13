@@ -2,10 +2,11 @@ import { FaInstagram } from 'react-icons/fa'
 import { ServicesCard } from '../molecules/services-card'
 import { BiVector } from 'react-icons/bi'
 import { LuPrinter } from 'react-icons/lu'
+import { Section } from './section'
 
 function Services() {
   return (
-    <>
+    <Section>
       <div className="flex flex-col">
         <div className="flex flex-col">
           <h2 className="text-center text-2xl font-semibold">Busca um profissional completo?</h2>
@@ -14,7 +15,7 @@ function Services() {
           </h4>
         </div>
         <div className="mt-10 flex justify-center">
-          <div className="flex w-3/4 max-w-[1200px] flex-col justify-center gap-12 md:flex-row">
+          <div className="flex w-3/4 max-w-[1200px] flex-col items-center justify-center gap-12 md:flex-row">
             <ServicesCard
               title={'Mídias Sociais'}
               description={
@@ -39,7 +40,7 @@ function Services() {
           </div>
         </div>
       </div>
-    </>
+    </Section>
   )
 }
 
