@@ -3,18 +3,18 @@ import { ServicesCard } from '../molecules/services-card'
 import { BiVector } from 'react-icons/bi'
 import { LuPrinter } from 'react-icons/lu'
 import { Section } from './section'
+import { SectionHeader } from '../molecules/section-header'
 
 function Services() {
   return (
     <Section>
       <div className="flex flex-col">
-        <div className="flex flex-col">
-          <h2 className="text-center text-2xl font-semibold">Busca um profissional completo?</h2>
-          <h4 className="text-center text-xl">
-            <span className="text-blue-500">Eu desenvolvo</span> o que a sua empresa precisa!
-          </h4>
-        </div>
-        <div className="mt-10 flex justify-center">
+        <SectionHeader
+          bolder={'Busca um profissional completo?'}
+          highlight={'Eu desenvolvo'}
+          complement={'o que a sua empresa precisa!'}
+        />
+        <div className="flex justify-center">
           <div className="flex w-3/4 max-w-[1200px] flex-col items-center justify-center gap-12 md:flex-row">
             <ServicesCard
               title={'Mídias Sociais'}
