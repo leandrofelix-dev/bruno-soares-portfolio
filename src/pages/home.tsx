@@ -11,7 +11,7 @@ function Home() {
   return (
     <>
       <NavBar focus={0} />
-      <div className="absolute z-20 flex h-[3000px] w-full flex-col gap-10 bg-black px-20 text-white">
+      <div className="absolute z-20 flex h-fit w-full flex-col gap-10 overflow-x-hidden bg-black px-20 text-white">
         <Hero />
         <Services />
         <AboutMe />
