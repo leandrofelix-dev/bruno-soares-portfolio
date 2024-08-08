@@ -5,7 +5,7 @@ interface SectionProps {
 
 function Section({ children, ...props }: SectionProps) {
   return (
-    <section className="my-10" {...props}>
+    <section className="my-2 md:my-10" {...props}>
       {children}
     </section>
   )
