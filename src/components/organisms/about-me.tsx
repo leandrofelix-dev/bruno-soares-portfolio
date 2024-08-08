@@ -3,8 +3,8 @@ import { Section } from './section'
 function AboutMe() {
   return (
     <Section>
-      <div className="flex flex-col-reverse items-center justify-center gap-24 md:flex-row">
-        <div className="flex w-96 flex-col gap-2">
+      <div className="flex flex-col items-center justify-center gap-24 md:flex-row">
+        <div className="flex w-72 flex-col gap-2 md:w-96">
           <h2 className="text-2xl font-bold text-blue-500">Quem sou eu?</h2>
           <p className="text-sm">
             Meu nome é Bruno, e sou um designer gráfico apaixonado por criar soluções visuais que conectam, engajam e
@@ -14,7 +14,7 @@ function AboutMe() {
             identidades visuais que encantam e memorizam.
           </p>
         </div>
-        <div className="w-80">
+        <div className="-mt-20 w-80 md:mt-0">
           <img src="/bruno-photo-2.png" alt="" />
         </div>
       </div>
