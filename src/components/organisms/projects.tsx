@@ -21,7 +21,7 @@ function Projects() {
           {projectImages.map((images, index) => (
             <div key={index} className="flex flex-col gap-4">
               {images.map((image) => (
-                <img src={`/public/projects/${image}.png`} alt={image} key={image} className="w-52" />
+                <img src={`/projects/${image}.png`} alt={image} key={image} className="w-52" />
               ))}
             </div>
           ))}
