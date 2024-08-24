@@ -13,7 +13,7 @@ function Clients() {
       <div className="flex items-center justify-center gap-8">
         {clients.map((client) => (
           <img
-            src={`/public/clients/${client}.png`}
+            src={`/clients/${client}.png`}
             alt={client}
             key={client}
             className="w-52 grayscale transition-all hover:grayscale-0"
