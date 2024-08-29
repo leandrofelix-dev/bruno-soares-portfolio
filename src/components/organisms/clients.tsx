@@ -10,7 +10,7 @@ function Clients() {
         highlight={'Sim'}
         complement={', esses estão alguns clientes meus que você já deve ter ouvido falar'}
       />
-      <div className="flex items-center justify-center gap-8">
+      <div className="flex flex-col items-center justify-center gap-8 md:flex-row">
         {clients.map((client) => (
           <img
             src={`/clients/${client}.png`}
