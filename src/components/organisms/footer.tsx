@@ -25,8 +25,8 @@ function Footer() {
         zoomControl={false}
         attributionControl={false}
       >
-        <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-        <TileLayer url="https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}.png?filter=grayscale" />
+        {/* Usando a camada CartoDB Positron em preto e branco */}
+        <TileLayer url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png" />
         <Marker position={positionOnMap} icon={customIcon} />
       </MapContainer>
       <footer className="z-10 -mt-20 flex h-96 w-full items-center justify-center rounded-tr-[100px] bg-black px-20">
