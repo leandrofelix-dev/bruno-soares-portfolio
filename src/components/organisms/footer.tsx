@@ -9,7 +9,7 @@ import { FaBehance } from 'react-icons/fa'
 const positionOnMap: [number, number] = [-6.7925, -39.3047]
 
 const customIcon = new L.Icon({
-  iconUrl: '/public/pin.png',
+  iconUrl: '/pin.png',
   iconSize: [40, 48],
   iconAnchor: [16, 32],
 })
@@ -25,7 +25,6 @@ function Footer() {
         zoomControl={false}
         attributionControl={false}
       >
-        {/* Usando a camada CartoDB Positron em preto e branco */}
         <TileLayer url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png" />
         <Marker position={positionOnMap} icon={customIcon} />
       </MapContainer>
