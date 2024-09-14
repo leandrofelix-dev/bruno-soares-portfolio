@@ -3,7 +3,7 @@ import { Section } from './section'
 function AboutMe() {
   return (
     <Section>
-      <div className="flex flex-col items-center justify-center gap-24 md:flex-row">
+      <div className="flex flex-col items-center justify-center gap-24 md:flex-row" id="sobre-mim">
         <div className="flex w-72 flex-col gap-2 md:w-96">
           <h2 className="text-2xl font-bold text-blue-500">Quem sou eu?</h2>
           <p className="text-sm">

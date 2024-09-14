@@ -24,9 +24,9 @@ function Services() {
               icon={<FaInstagram size={30} />}
             />
             <ServicesCard
-              title={'Mídias Sociais'}
+              title={'Identidades Visuais'}
               description={
-                'Sou designer gráfico especialista em criação de posts para social media. Crio posts para Instagram, Facebook, Twitter, LinkedIn e outras plataformas. Produzo imagens, vídeos, infográficos, animações e outros elementos visuais que compõem o seu perfil nas redes sociais.'
+                'Crio identidades visuais que conectam com seu público, comunicam a essência da sua marca e te ajuda a se destacar da concorrência. Tenho experiência em: logotipos, paletas de cores, tipografias, imagens e ilustrações. Trabalho com paixão e dedicação para criar marcas que sejam memoráveis, atrativas e eficazes.'
               }
               icon={<BiVector size={30} />}
             />

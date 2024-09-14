@@ -55,7 +55,7 @@ function Hero() {
   })
 
   return (
-    <div className="flex flex-col items-center justify-center md:flex-row">
+    <div className="flex flex-col items-center justify-center md:flex-row" id="inicio">
       <div className="relative hidden flex-col md:flex">
         <img
           src="/_bruno-photo.png"
@@ -143,9 +143,11 @@ function Hero() {
             </h2>
           </div>
         </div>
-        <button className="flex items-center justify-center gap-4 rounded-md bg-gradient-primary py-3">
-          <FaRegPaperPlane size={20} /> <p className="text-[16px] font-semibold">SOLICITAR ORÇAMENTO</p>
-        </button>
+        <a href="https://wa.me/55889981279672" target="_blank">
+          <button className="flex min-w-72 items-center justify-center gap-4 rounded-md bg-gradient-primary py-3 transition-all ease-in-out hover:opacity-90">
+            <FaRegPaperPlane size={20} /> <p className="text-[16px] font-semibold">SOLICITAR ORÇAMENTO</p>
+          </button>
+        </a>
       </div>
     </div>
   )
