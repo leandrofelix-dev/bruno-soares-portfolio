@@ -143,7 +143,7 @@ function Hero() {
             </h2>
           </div>
         </div>
-        <a href="https://wa.me/55889981279672" target="_blank">
+        <a href="https://wa.me/5588981279672?text=" target="_blank">
           <button className="flex min-w-72 items-center justify-center gap-4 rounded-md bg-gradient-primary py-3 transition-all ease-in-out hover:opacity-90">
             <FaRegPaperPlane size={20} /> <p className="text-[16px] font-semibold">SOLICITAR ORÇAMENTO</p>
           </button>

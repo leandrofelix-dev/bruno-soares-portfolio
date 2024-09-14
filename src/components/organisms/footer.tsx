@@ -35,7 +35,7 @@ function Footer() {
             <p>
               <span className="text-blue-500">A solução</span> que a sua marca precisa
             </p>
-            <a href="https://wa.me/55889981279672" target="_blank">
+            <a href="https://wa.me/5588981279672?text=" target="_blank">
               <button className="flex items-center justify-center gap-4 rounded-md bg-gradient-primary px-4 py-3 transition-all ease-in-out hover:opacity-90">
                 <FaRegPaperPlane size={14} /> <p className="text-[12px] font-semibold">SOLICITAR ORÇAMENTO</p>
               </button>
@@ -43,7 +43,7 @@ function Footer() {
           </div>
           <div>
             <h6 className="text-xl font-semibold">Contato</h6>
-            <a href="https://wa.me/55889981279672">
+            <a href="https://wa.me/5588981279672?text=" target="_blank">
               <span className="flex items-center gap-2">
                 <IoLogoWhatsapp />
                 (88) 9 8127-9672
