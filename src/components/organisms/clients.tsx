@@ -2,7 +2,7 @@ import { SectionHeader } from '../molecules/section-header'
 import { Section } from './section'
 
 function Clients() {
-  const clients = ['client_1', 'client_1', 'client_1', 'client_1', 'client_1']
+  const clients = ['client_1', 'client_2', 'client_3', 'client_4', 'client_5']
   return (
     <Section>
       <SectionHeader
@@ -16,7 +16,7 @@ function Clients() {
             src={`/clients/${client}.png`}
             alt={client}
             key={client}
-            className="w-52 grayscale transition-all hover:grayscale-0"
+            className="m-2 max-h-20 max-w-52 cursor-pointer grayscale transition-all hover:m-0 hover:max-h-24 hover:max-w-56 hover:grayscale-0"
           />
         ))}
       </div>

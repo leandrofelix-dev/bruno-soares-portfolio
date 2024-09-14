@@ -6,7 +6,7 @@ import { IoLogoWhatsapp } from 'react-icons/io5'
 import { LuInstagram } from 'react-icons/lu'
 import { FaBehance } from 'react-icons/fa'
 
-const positionOnMap: [number, number] = [-6.7925, -39.3047]
+const positionOnMap: [number, number] = [-6.79044, -39.304268]
 
 const customIcon = new L.Icon({
   iconUrl: '/pin.png',
@@ -35,24 +35,32 @@ function Footer() {
             <p>
               <span className="text-blue-500">A solução</span> que a sua marca precisa
             </p>
-            <button className="flex items-center justify-center gap-4 rounded-md bg-gradient-primary px-4 py-3">
-              <FaRegPaperPlane size={14} /> <p className="text-[12px] font-semibold">SOLICITAR ORÇAMENTO</p>
-            </button>
+            <a href="https://wa.me/55889981279672" target="_blank">
+              <button className="flex items-center justify-center gap-4 rounded-md bg-gradient-primary px-4 py-3 transition-all ease-in-out hover:opacity-90">
+                <FaRegPaperPlane size={14} /> <p className="text-[12px] font-semibold">SOLICITAR ORÇAMENTO</p>
+              </button>
+            </a>
           </div>
           <div>
             <h6 className="text-xl font-semibold">Contato</h6>
-            <span className="flex items-center gap-2">
-              <IoLogoWhatsapp />
-              (88) 9 8127-9672
-            </span>
-            <span className="flex items-center gap-2">
-              <LuInstagram />
-              @brunodesigner.psd
-            </span>
-            <span className="flex items-center gap-2">
-              <FaBehance />
-              brunosoaresdesigner
-            </span>
+            <a href="https://wa.me/55889981279672">
+              <span className="flex items-center gap-2">
+                <IoLogoWhatsapp />
+                (88) 9 8127-9672
+              </span>
+            </a>
+            <a href="https://www.instagram.com/brunodesigner.psd/">
+              <span className="flex items-center gap-2">
+                <LuInstagram />
+                @brunodesigner.psd
+              </span>
+            </a>
+            <a href="https://www.behance.net/brunosoaresdesigner">
+              <span className="flex items-center gap-2">
+                <FaBehance />
+                brunosoaresdesigner
+              </span>
+            </a>
           </div>
         </div>
       </footer>

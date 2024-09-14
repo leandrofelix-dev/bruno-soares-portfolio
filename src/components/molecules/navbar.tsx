@@ -27,7 +27,10 @@ function NavBar({ focus }: INavBarProps) {
       <nav className="flex h-20 items-center justify-between md:h-24">
         <div className="flex h-20 items-center justify-between">
           <img src="/logo-header.svg" alt="logo do designer bruno soares" className="full max-h-6 md:max-h-8" />
-          <button onClick={toggleModal} className="absolute right-10 text-blue-500 focus:outline-none md:hidden">
+          <button
+            onClick={toggleModal}
+            className="absolute right-10 text-blue-500 transition-all ease-in-out hover:opacity-90 focus:outline-none md:hidden"
+          >
             <TbMenu size={24} />
           </button>
         </div>
